@@ -1,28 +1,101 @@
+/* Avatar Styling */
 .avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  objet-fit: cover;
+  width: 120px; /* Slightly larger for emphasis */
+  height: 120px;
+  object-fit: cover;
   margin-bottom: var(--typography-spacing-vertical);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
+/* Section Styling */
 .section {
   margin-bottom: var(--block-spacing-vertical);
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(255, 87, 51, 0.8), rgba(42, 42, 114, 0.8));
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+.section:hover {
+  transform: translateY(-5px);
 }
 
+/* Items Styling */
 .items {
   display: flex;
   column-gap: var(--spacing);
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  row-gap: 16px;
 }
 
+/* Button Styling */
+[role="button"] {
+  margin-bottom: var(--spacing);
+  width: 100%;
+  padding: 10px 20px;
+  background: #ff5733;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px #cc4529;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+[role="button"]:hover {
+  box-shadow: 0 6px #cc4529;
+  transform: translateY(-2px);
+}
+[role="button"]:active {
+  box-shadow: 0 2px #cc4529;
+  transform: translateY(2px);
+}
+
+/* Typography Adjustments for hgroup */
 [role="button"] > hgroup {
   margin-bottom: 0;
 }
 
-[role="button"] {
-  margin-bottom: var(--spacing);
-  width: 100%;
+/* Additional Features */
+body {
+  font-family: 'Roboto Slab', serif;
+  background: linear-gradient(to bottom, #2a2a72, #121212);
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Custom Links */
+a {
+  color: #ff5733;
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+a:hover {
+  color: #ffa07a;
+  border-bottom: 2px solid #ff5733;
+}
+
+/* Footer Section */
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 0.9em;
+}
+.footer a {
+  color: #ff5733;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
 }
