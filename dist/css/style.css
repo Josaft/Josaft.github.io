@@ -1,7 +1,7 @@
 /* Avatar Styling */
 .avatar {
   border-radius: 50%;
-  width: 120px; /* Slightly larger for emphasis */
+  width: 120px;
   height: 120px;
   object-fit: cover;
   margin-bottom: var(--typography-spacing-vertical);
@@ -11,6 +11,23 @@
 .avatar:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Website Link Styling (New) */
+.website-link {
+  text-align: center;
+  margin-bottom: 20px; /* Add some spacing */
+}
+.website-link a {
+  font-size: 1.2em;
+  color: #22c1c3;
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  font-weight: bold;
+}
+.website-link a:hover {
+  color: #fdbb2d;
+  border-bottom: 2px solid #22c1c3;
 }
 
 /* Section Styling */
@@ -50,7 +67,7 @@
   border-radius: 8px;
   box-shadow: 0 4px #1baaa3;
   transition: transform 0.2s, box-shadow 0.2s;
-  outline: none; /* Remove outline */
+  outline: none;
 }
 [role="button"]:hover {
   box-shadow: 0 6px #1baaa3;
@@ -61,7 +78,7 @@
   transform: translateY(2px);
 }
 [role="button"]:focus {
-  border: 2px solid #22c1c3; /* Add subtle focus outline */
+  border: 2px solid #22c1c3;
 }
 
 /* Typography Adjustments for hgroup */
@@ -71,7 +88,7 @@
 
 /* Additional Features */
 body {
-  font-family: 'Poppins', sans-serif; /* Updated font family */
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #22c1c3, #0f2027);
   color: #f8f8f8;
   line-height: 1.6;
