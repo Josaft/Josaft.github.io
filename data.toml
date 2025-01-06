@@ -27,7 +27,7 @@ title = "YouTube"
 url = "https://www.youtube.com/josaft"
 
 [[sections]]
-title = "Portfolio"
+title = "Projects"
 description = "Explore my work on these platforms."
 direction = "row"
 item_style = "outline"
