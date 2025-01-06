@@ -50,6 +50,7 @@
   border-radius: 8px;
   box-shadow: 0 4px #1baaa3;
   transition: transform 0.2s, box-shadow 0.2s;
+  outline: none; /* Remove outline */
 }
 [role="button"]:hover {
   box-shadow: 0 6px #1baaa3;
@@ -59,6 +60,9 @@
   box-shadow: 0 2px #1baaa3;
   transform: translateY(2px);
 }
+[role="button"]:focus {
+  border: 2px solid #22c1c3; /* Add subtle focus outline */
+}
 
 /* Typography Adjustments for hgroup */
 [role="button"] > hgroup {
@@ -67,7 +71,7 @@
 
 /* Additional Features */
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Poppins', sans-serif; /* Updated font family */
   background: linear-gradient(to bottom, #22c1c3, #0f2027);
   color: #f8f8f8;
   line-height: 1.6;
